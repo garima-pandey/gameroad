@@ -910,27 +910,15 @@ input[type="email"]{
     color: #fff;
 }
 
-#section_10 .row:after{
-    content: "";
-    border-top: 1px solid #ccc;
-    position: absolute;
-    margin: 0 auto;
-    /*bottom: 78px;*/
-    width: 95%;
-    left: 2%;
-    top: 220px;
-}
-
-
 #section_11{
     height: 70px;
-    background-color: #262626;
+    background-color: #000;
 }
 
 #section_11 .column_1 p{
     color: #ccc;
     line-height: 25px;
-    margin-top: 13px;
+    padding-top: 13px;
      font-family: 'Montserrat', sans-serif;
     font-size: 14px;
 }
@@ -980,12 +968,6 @@ input[type="email"]{
         padding-top: 50px;
     }
 }
-
-
-/*#section_11 .column_2 li a:hover{
-    background-color: dodgerblue;
-}*/
-
 #section_12{
     position: relative;
 }
