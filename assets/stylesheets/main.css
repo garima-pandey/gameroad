@@ -792,7 +792,7 @@ input[type="email"]{
         
         
 #section_9 input[type="text"]{
-    width: 415px;
+    width: 44%;
     height: 40px;
     background-color: transparent;
    /* color: #ccc;*/
@@ -812,7 +812,7 @@ input[type="email"]{
 
 
 #section_9 .row1 .txtarea{
-    width: 415px;
+    width: 44%;
     height: 100px;
     background-color: transparent;
     border: transparent;
@@ -960,14 +960,6 @@ input[type="email"]{
        padding-right: 10px;
 }
 
-@media (max-width:992px){
-    #section_11 .column_1{
-        padding-top: 50px;
-    }
-    #section_11 .column_2{
-        padding-top: 50px;
-    }
-}
 #section_12{
     position: relative;
 }
