@@ -88,35 +88,6 @@ body {
     left: 10%;
     opacity: 1;
 }
-#main-navigation .dropdown {
-    position: absolute;
-    text-align: center;
-    top: 70px;
-    padding: 20px;
-    left: 0px;
-    width: 100%;
-    background-color: #fff;
-    opacity: 0;
-    transform: scale(1,0);
-    transition: 1s;
-    transform-origin: top;
-}
-#main-navigation .dropdown ul {
-    column-count: 3;
-    column-gap: 10px;
-}
-#main-navigation .dropdown ul li {
-    padding: 0px;
-    margin: 0px 0px 20px;
-    display: block;
-}
-#main-navigation .row {
-    justify-content: center;
-}
-#main-navigation ul li:hover .dropdown {
-    transform: scale(1,1);
-    opacity: 1;
-}
 
 .menu-btn {
     position: absolute;
@@ -275,7 +246,7 @@ input[value="open_nav"] {
     width: 25%;
     position: relative;
     overflow: hidden;
-    height: 221px;
+    height: 200px;
 }
 #section_2 .column img {
     width: 100%;
@@ -319,6 +290,15 @@ input[value="open_nav"] {
     transform: rotate(360deg);
 }
 
+@media (max-width: 1200px){
+    #section_2 .column{
+        height: 169px;
+    }
+    #section_2 .column img{
+        height: inherit;
+    }
+}
+
 @media (max-width: 992px) {
     #section_2 .row {
         flex-wrap: wrap;
@@ -326,7 +306,6 @@ input[value="open_nav"] {
     }
     #section_2 .column {
         width: 50%;
-
     }
     
 }
@@ -476,8 +455,6 @@ input[value="open_nav"] {
 
 #section_5 {
     background-color: #262626;
-    /*background-attachment: fixed;*/
-   /* background-size: 100% 100%;*/
 }
 
 #section_5 .row{
@@ -514,22 +491,22 @@ input[value="open_nav"] {
     font-size: 15px;
 }
 
-#section_5 h4{
+#section_5 h5{
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
-    font-size: 18px;
+    font-size: 16px;
 
 }
 
-#section_5 h4 a{
+#section_5 h5 a{
     text-decoration: none;
 }
 
-#section_5 h4 a{
+#section_5 h5 a{
     color: #2CC185;
     margin-top: 20px;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 700;
 }
 
@@ -582,20 +559,6 @@ input[value="open_nav"] {
 }
 
 
-/*#section_6 .row .div_1,.div_2,.div_3,.div_4,.div_5,.div_6,.div_7,.div_8,.div_9,.div_10,.div_11,.div_12 {
-    width: 25%;
-    overflow: hidden;
-}*/
-
-/*#section_6{
-    display: flex;
-    width: 25%
-    overflow: hidden;
-    width: 50%;
-    overflow: hidden;
-    flex-wrap: wrap;
-}*/
-
 #section_6{
     height: 686px;
     border-bottom: 1px solid #fff;
@@ -631,9 +594,6 @@ flex-wrap: wrap;
     height: inherit;
 }
 
-
-
-
 #section_6 .row div:after {
     content: "";
     position: absolute;
@@ -655,18 +615,19 @@ flex-wrap: wrap;
 
 #section_7 {
     overflow: hidden;
-    /*text-align: center;*/
     position: relative;
-    height: 271px;
+    height: 270px;
 }
 
 #section_7 .slide {
     float: left;
     width: 5%;
     border-right: 1px solid #fff;
+    min-height: 270px;
 }
 #section_7 .slide img {
     width: 100%;
+    min-height: inherit;
 }
 
 #section_7 .slider {
@@ -779,8 +740,6 @@ input[type="email"]{
 #section_9 {
     padding: 20px 0;
     font-family: 'Montserrat', sans-serif;
-   /* background-image: url("../images/tabs-bg.jpg");*/
-
 }
 
 #section_9 h3{
@@ -795,12 +754,9 @@ input[type="email"]{
     width: 44%;
     height: 40px;
     background-color: transparent;
-   /* color: #ccc;*/
     border: transparent;
     font-size: medium;
-    /*margin-right: 5px;*/
     padding-left: 10px;
-    /*opacity: 0.5;*/
     border-bottom: 1px solid #0199E6;
     border-top: 1px solid #0199E6;
     border-right: 1px solid #0199E6;
@@ -808,26 +764,18 @@ input[type="email"]{
     margin-bottom: 5px;
 }
 
-
-
-
 #section_9 .row1 .txtarea{
     width: 44%;
-    height: 100px;
+    height: 90px;
     background-color: transparent;
     border: transparent;
-   /*color: #ccc;*/
     border-bottom: 1px solid #0199E6;
     border-top: 1px solid #0199E6;
     border-right: 1px solid #0199E6;
     border-left: 6px solid #0199E6;
     font-family: 'Montserrat', sans-serif;
-
     font-size:medium;
-   /* margin-right: 5px;*/
     padding-left: 10px;
-   /* opacity: 0.5;*/
-    /*border: 1px solid blue;*/
     margin-bottom: 5px;
 }
 
@@ -884,8 +832,6 @@ input[type="email"]{
     margin: 100px;
     position: relative;
     text-align: left;
-    /*flex-wrap: wrap;
-    justify-content:space-between;*/
 }
 
 #section_10 ul li{
